@@ -13,7 +13,8 @@ const InvestmentController = {
     }
   },
   addInvestment: async (req, res) => {
-    const { id } = req.body;
+    // const { id } = req.body;
+    const id = req.params.id;
     console.log(id);
     try {
       const newInvest = new Investment({

@@ -8,6 +8,6 @@ const InvestmentController = require("../controllers.js/investmentController");
 
 router.get("/", auth, InvestmentController.show);
 
-router.post("/addInvestment", auth, InvestmentController.addInvestment);
+router.post("/addInvestment/:id", auth, InvestmentController.addInvestment);
 
 module.exports = router;
